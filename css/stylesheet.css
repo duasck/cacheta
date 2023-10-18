@@ -1,0 +1,51 @@
+* {
+    font-family: Poppins;
+
+}
+
+body {
+    background-color: #090909;
+}
+
+h1 {
+    color: #636363;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+h3 {
+    color: #06CB61;
+}
+
+p {
+    color: #636363;
+
+}
+
+button {
+    color: #06CB61;
+    display: flex;
+    width: 322px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #06CB61;
+    background-color: #090909;
+}
+
+.quemSomos {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.somos {
+    border-radius: 8px;
+    border: 1px solid #1E1E1E;
+    background: #111;
+}
