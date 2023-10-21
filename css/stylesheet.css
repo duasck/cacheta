@@ -1,12 +1,11 @@
 * {
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Space Mono', monospace;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-color: #090909;
+    margin: 0;
+    padding-top: 4.4375rem;
 }
 
 h1 {
@@ -26,7 +25,7 @@ p {
 
 }
 
-button {
+button.contato {
     color: #06CB61;
     display: flex;
     width: 322px;
@@ -36,7 +35,31 @@ button {
     gap: 10px;
     border-radius: 8px;
     border: 1px solid #06CB61;
-    background-color: #090909;
+    background-color: #111;
+}
+
+button.jogarAgora {
+    border-radius: 0.5rem;
+    background: #06CB61;
+    display: flex;
+    width: 21.3125rem;
+    height: 4.25rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    color: #111;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.0375rem;
+}
+
+button:hover {
+    animation: shadow-drop-left-right 0.4s linear both;
+    opacity: 90%;
 }
 
 .quemSomos {
@@ -46,8 +69,63 @@ button {
     justify-content: flex-start;
 }
 
-.somos {
-    border-radius: 8px;
+.como {
+    border-radius: 0.5rem;
     border: 1px solid #1E1E1E;
     background: #111;
+}
+
+.jogar {
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #090909;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 15.8125rem;
+    background: #111;
+    height: 3rem;
+}
+
+.menu img {
+    cursor: pointer;
+    margin-left: 5rem;
+}
+
+.menu img:hover {
+    opacity: 0.8;
+}
+
+.home img {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.home img:hover {
+    opacity: 0.8;
+}
+
+.componenteDepoimento1 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+@keyframes shadow-drop-left-right {
+    0% {
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent
+    }
+
+    100% {
+        box-shadow: -12px 0 20px -12px rgba(37, 255, 149, 0.55), 12px 0 20px -12px rgba(0, 176, 79, 0.55)
+    }
 }
