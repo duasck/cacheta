@@ -4,20 +4,24 @@
 
 body {
     background-color: #090909;
-    margin: 0;
     padding-top: 4.4375rem;
+    padding-left: 1rem;
+
 }
 
 h1 {
     color: #636363;
+
 }
 
 h2 {
     color: #FFFFFF;
+
 }
 
 h3 {
     color: #06CB61;
+
 }
 
 p {
@@ -36,8 +40,12 @@ button.contato {
     border-radius: 8px;
     border: 1px solid #06CB61;
     background-color: #111;
+    margin: 0 auto;
 }
 
+.agora{
+    margin-top: 2rem;
+}
 button.jogarAgora {
     border-radius: 0.5rem;
     background: #06CB61;
@@ -55,6 +63,7 @@ button.jogarAgora {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.0375rem;
+    margin: 0 auto;
 }
 
 button:hover {
@@ -64,18 +73,25 @@ button:hover {
 
 .quemSomos {
     flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
     justify-content: flex-start;
+}
+
+.comoJogar {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
 }
 
 .como {
     border-radius: 0.5rem;
     border: 1px solid #1E1E1E;
     background: #111;
+    padding-left: 1rem;
+
 }
 
 .jogar {
+    padding-left: 1rem;
     border-radius: 0.5rem;
     border: 1px solid #1F1F1F;
     background: #090909;
@@ -85,22 +101,22 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    gap: 15.8125rem;
     background: #111;
-    height: 3rem;
 }
 
-.menu img {
+.menu svg {
     cursor: pointer;
-    margin-left: 5rem;
+    height: 40px;
+    width: 40px;
+    padding: 1rem;
+    padding-right: 1.5rem;
 }
 
-.menu img:hover {
+.menu svg:hover {
     opacity: 0.8;
 }
 
@@ -108,17 +124,75 @@ header {
     cursor: pointer;
     height: 40px;
     width: 40px;
+    padding: 1rem;
 }
 
 .home img:hover {
     opacity: 0.8;
 }
 
-.componenteDepoimento1 img{
+.componenteDepoimento1 img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
+
 }
+
+.logo {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.camisa {
+    display: flex;
+    justify-content: center;
+}
+
+.modoJogo {
+    display: flex;
+    padding: 0rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    flex-wrap: wrap;
+}
+
+.componenteModo {
+    display: flex;
+    width: 9.34731rem;
+    height: 9.46269rem;
+    padding: 0.625rem 0.625rem 2.5rem 0.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #111;
+}
+
+.componenteModo h2 {
+    display: flex;
+    width: 9.34731rem;
+    height: 2.308rem;
+    justify-content: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #090909;
+}
+
+.icones {
+    margin-top: 2rem;
+}
+
 
 @keyframes shadow-drop-left-right {
     0% {
