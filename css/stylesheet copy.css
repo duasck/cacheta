@@ -1,0 +1,263 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #090909;
+    padding-top: 4.4375rem;
+    height: 100%;
+    margin: 0;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4.4375rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+}
+
+h1 {
+    color: #636363;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.045rem;
+
+}
+
+h2 {
+    color: #FFFFFF;
+
+}
+
+h3 {
+    color: #06CB61;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.02438rem;
+
+}
+
+p {
+    color: #636363;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0225rem;
+    width: 20.75rem;
+    height: 5rem;
+    flex-shrink: 0;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.quemSomos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+.camisa {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0%;
+}
+
+.comoJogar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.como {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    border-radius: 0.5rem;
+    border: 1px solid #1E1E1E;
+    background: #111;
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+}
+
+.jogar {
+    padding-left: .5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #090909;
+    margin-bottom: 1rem;
+}
+
+button.contato {
+    color: #06CB61;
+    display: flex;
+    width: 322px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #06CB61;
+    background-color: #111;
+}
+
+.conteinerModo {
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #090909;
+    margin: 10%;
+}
+
+.modoJogo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.modos {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.componenteModo {
+    display: flex;
+    width: 9.34731rem;
+    height: 9.46269rem;
+    padding: 0.625rem 0.625rem 2.5rem 0.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #111;
+    margin-bottom: 8%;
+}
+
+.componenteModo h2 {
+    display: flex;
+    width: 9.34731rem;
+    height: 2.308rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #090909;
+}
+
+.agora {
+    margin-top: 2rem;
+}
+
+button.jogarAgora {
+    border-radius: 0.5rem;
+    background: #06CB61;
+    display: flex;
+    width: 21.3125rem;
+    height: 4.25rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    color: #111;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.0375rem;
+    margin: 0 auto;
+}
+
+button:hover {
+    animation: shadow-drop-left-right 0.4s linear both;
+    opacity: 90%;
+}
+
+.menu svg {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    padding: 1rem;
+    padding-right: 1.5rem;
+}
+
+.menu svg:hover {
+    opacity: 0.8;
+}
+
+.home {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    padding: 1rem;
+}
+
+.home img:hover {
+    opacity: 0.8;
+}
+
+.componenteDepoimento1 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+
+
+.icones {
+    margin-top: 2rem;
+}
+
+
+@keyframes shadow-drop-left-right {
+    0% {
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent
+    }
+
+    100% {
+        box-shadow: -12px 0 20px -12px rgba(37, 255, 149, 0.55), 12px 0 20px -12px rgba(0, 176, 79, 0.55)
+    }
+}
