@@ -457,29 +457,17 @@ footer {
     letter-spacing: -0.0375rem;
 }
 
-.active {
+.sidebarActive {
+    width: 100vw;
+    height: 100vh;
+    background: #010202;
     position: fixed;
     top: 0;
     right: 0;
-    display: flex;
-    align-items: flex-start;
-    background-color: #06CB61;
-
+    margin-top: 71px
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 240px;
-    height: 100%;
-    display: none;
-}
-
-.sidebarActive {
     width: 100vw;
     height: 100vh;
     background: #010202;
@@ -492,9 +480,16 @@ footer {
     justify-content: center;
     overflow: hidden;
     padding: 20px;
+    display: none;
 }
 
-#seta {
+#menu100{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .buttuonNav:hover {
@@ -512,13 +507,4 @@ button:hover {
 
 .plataforma {
     cursor: pointer;
-}
-
-#logoAside {
-    width: 30%;
-}
-
-#seta {
-    width: 0.5625rem;
-    height: 1.1875rem;
 }

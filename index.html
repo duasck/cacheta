@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cachetapix</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="icon" href="assets/LOGO.png" type="png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,12 +15,12 @@
 </head>
 
 <body>
-    <img id="seta" src="assets/Seta.png" alt="">
-    <aside class="active">
-        <div class="sidebarActive">
+
+    <aside class="sidebar" id="sideMenu">
+        <div id="menu100">
             <img id="logoAside" src="assets/LogoMenu.png" alt="logo">
             <nav>
-                <button class="buttuonNavV"> Entrar no clube</button>
+                <button class="buttuonNavV">Entrar no clube</button>
                 <button class="buttuonNav"> Como jogar</button>
                 <button class="buttuonNav"> Modos de jogo</button>
                 <button class="buttuonNav"> Download</button>
@@ -29,8 +30,8 @@
 
     <header>
         <img class="headerImg" id="home" src="assets/LOGO.png" alt="Home">
-        <svg class="headerImg" id="menu" xmlns="http://www.w3.org/2000/svg" width="34" height="21" viewBox="0 0 34 21"
-            fill="none">
+        <svg class="headerImg" onclick="toggleMenu()" id="menu" xmlns="http://www.w3.org/2000/svg" width="34"
+            height="21" viewBox="0 0 34 21" fill="none">
             <rect x="6" y="0.5" width="28" height="4" rx="2" fill="#D9D9D9" />
             <rect y="8.5" width="27" height="4" rx="2" fill="#06CB61" />
             <rect x="14" y="16.5" width="20" height="4" rx="2" fill="#D9D9D9" />
@@ -278,6 +279,8 @@
     <footer id="rodape">
         <p>Copyright©2023. Todos os direitos reservados a Jpop80s</p>
     </footer>
+
 </body>
+<script src="script.js">  </script>
 
 </html>
