@@ -25,9 +25,9 @@
             <img id="logoAside" src="assets/logo oficial.svg" alt="logo">
             <section class="menu-top">
                 <button id="downloadBtn" onclick="toggleDownload()" class="buttonNav secundary"> Download</button>
-                <button id="comoBtn"  onclick="toggleComo()" class="buttonNav secundary"> Como jogar</button>
-                <button id="modosBtn"  onclick="toggleModos()" class="buttonNav secundary"> Modos de jogo</button>
-                <button id="entrarBtn"  onclick="toggleEntrar()" class="buttonNav primary">Entrar no clube</button>
+                <button id="comoBtn" onclick="toggleComo()" class="buttonNav secundary"> Como jogar</button>
+                <button id="modosBtn" onclick="toggleModos()" class="buttonNav secundary"> Modos de jogo</button>
+                <button id="entrarBtn" onclick="toggleEntrar()" class="buttonNav primary">Entrar no clube</button>
             </section>
         </nav>
     </aside>
@@ -85,6 +85,39 @@
             </section>
         </div>
         <div class="agruparCard">
+            <div class="card dark">
+                <h3>4 - Coloque a ID do nosso clube</h3>
+                <p>Clique no botão entrar no clube e adicione a ID fornecida pelo nosso time de
+                    atendimento.</p>
+            </div>
+            <div class="card">
+                <h3>5 - Agora está pronto para vencer</h3>
+                <p>AGORA VOCE JÁ FAZ PARTE DA SELEÇÃO CACHETAPIX!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="comoJogar-mobile">
+        <div id="comoJogarResponsive">
+            <h1>Como jogar</h1>
+            <div class="card">
+                <h3>1 - Baixar o app</h3>
+                <p>Vá até a loja de aplicativos do seu smartphone e procure por <strong>Cacheta League Brazil,</strong>
+                    logo após faça o download</p>
+            </div>
+            <div class="card dark">
+                <h3>2 - Cadastre-se</h3>
+                <p>Após fazer o download clique no botão <strong>registrar,</strong> insira os dados solicitados depois
+                    clique em <strong>confirmar</strong></p>
+            </div>
+            <div class="card">
+                <h3>3 - Entre em contato com nosso time</h3>
+                <p>Depois de criar a sua conta, ente em contato com nosso time de suporte clicando
+                    no botão abaixo.</p>
+                <section id="buttonContato">
+                    <button onclick="toggleContato()" type="button" id="contatoBtn">Entrar em contato agora</button>
+                </section>
+            </div>
             <div class="card dark">
                 <h3>4 - Coloque a ID do nosso clube</h3>
                 <p>Clique no botão entrar no clube e adicione a ID fornecida pelo nosso time de
@@ -200,14 +233,14 @@
         <div id="grupoDisponivel">
             <div id="textosDisponivel">
                 <span>
-                    <span id="textoDisVerde">Disponivel</span>
+                    <span id="textoDisVerde">Disponível</span>
                     <span id="textoDis"> nas <br />plataformas mobile </span>
                 </span>
             </div>
             <h2 id="baixe">Baixe agora!</h2>
             <div class="plataformas">
-                <svg class="plataforma" onclick="togglePlayStore()" xmlns="http://www.w3.org/2000/svg" width="113" height="33" viewBox="0 0 113 33"
-                    fill="none">
+                <svg class="plataforma" onclick="togglePlayStore()" xmlns="http://www.w3.org/2000/svg" width="113"
+                    height="33" viewBox="0 0 113 33" fill="none">
                     <g clip-path="url(#clip0_103_439)">
                         <path
                             d="M110.264 0.458252H2.30613C1.28722 0.458252 0.461227 1.27906 0.461227 2.29159V30.7083C0.461227 31.7208 1.28722 32.5416 2.30613 32.5416H110.264C111.283 32.5416 112.109 31.7208 112.109 30.7083V2.29159C112.109 1.27906 111.283 0.458252 110.264 0.458252Z"
@@ -253,8 +286,8 @@
                         </clipPath>
                     </defs>
                 </svg>
-                <svg class="plataforma" onclick="toggleAppleStore()" xmlns="http://www.w3.org/2000/svg" width="111" height="33" viewBox="0 0 111 33"
-                    fill="none">
+                <svg class="plataforma" onclick="toggleAppleStore()" xmlns="http://www.w3.org/2000/svg" width="111"
+                    height="33" viewBox="0 0 111 33" fill="none">
                     <g clip-path="url(#clip0_103_453)">
                         <path
                             d="M108.312 0.458252H2.26531C1.26443 0.458252 0.453061 1.27906 0.453061 2.29159V30.7083C0.453061 31.7208 1.26443 32.5416 2.26531 32.5416H108.312C109.313 32.5416 110.125 31.7208 110.125 30.7083V2.29159C110.125 1.27906 109.313 0.458252 108.312 0.458252Z"
@@ -283,7 +316,7 @@
     <section id="disponivel-mobile">
         <div id="textosDisponivel">
             <span>
-                <span id="textoDisVerde">Disponivel</span>
+                <span id="textoDisVerde">Disponível</span>
                 <span id="textoDis"> nas <br />plataformas mobile </span>
             </span>
         </div>
@@ -293,8 +326,8 @@
         <div id="baixarAgora">
             <h2 id="baixe">Baixe agora!</h2>
             <div class="plataformas">
-                <svg class="plataforma" onclick="togglePlayStore()" xmlns="http://www.w3.org/2000/svg" width="113" height="33" viewBox="0 0 113 33"
-                    fill="none">
+                <svg class="plataforma" onclick="togglePlayStore()" xmlns="http://www.w3.org/2000/svg" width="113"
+                    height="33" viewBox="0 0 113 33" fill="none">
                     <g clip-path="url(#clip0_103_439)">
                         <path
                             d="M110.264 0.458252H2.30613C1.28722 0.458252 0.461227 1.27906 0.461227 2.29159V30.7083C0.461227 31.7208 1.28722 32.5416 2.30613 32.5416H110.264C111.283 32.5416 112.109 31.7208 112.109 30.7083V2.29159C112.109 1.27906 111.283 0.458252 110.264 0.458252Z"
@@ -340,8 +373,8 @@
                         </clipPath>
                     </defs>
                 </svg>
-                <svg class="plataforma" onclick="toggleAppleStore()" xmlns="http://www.w3.org/2000/svg" width="111" height="33" viewBox="0 0 111 33"
-                    fill="none">
+                <svg class="plataforma" onclick="toggleAppleStore()" xmlns="http://www.w3.org/2000/svg" width="111"
+                    height="33" viewBox="0 0 111 33" fill="none">
                     <g clip-path="url(#clip0_103_453)">
                         <path
                             d="M108.312 0.458252H2.26531C1.26443 0.458252 0.453061 1.27906 0.453061 2.29159V30.7083C0.453061 31.7208 1.26443 32.5416 2.26531 32.5416H108.312C109.313 32.5416 110.125 31.7208 110.125 30.7083V2.29159C110.125 1.27906 109.313 0.458252 108.312 0.458252Z"

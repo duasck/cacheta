@@ -54,9 +54,11 @@ p {
     -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-#seta{
+
+#seta {
     display: none;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -138,11 +140,15 @@ header {
     border-radius: 0.5rem;
 }
 
+#comoJogar-mobile {
+    display: none;
+}
+
 #comoJogar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 22px;
     padding: 30px 0px;
 }
 
@@ -157,7 +163,7 @@ header {
 
 .agruparCard {
     display: flex;
-    gap: 16px;
+    gap: 22px;
 }
 
 .card {
@@ -170,12 +176,19 @@ header {
     background: #111;
 }
 
+.card h3{
+   margin: 0px;
+}
+.card p{
+    margin: 0px;
+ }
 .dark {
     background: #090909;
 }
 
 .contato3 {
     padding: 20px 0px;
+
 }
 
 .contato3 h3 {
@@ -185,10 +198,24 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 40px 0px 10%;
 }
 
 .contato3 p {
-    padding: 0px 40px;
+    padding: 0px 40px 0px 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #636363;
+    max-width: 40.875rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.03rem;
 }
 
 #cardContato h3 {
@@ -208,7 +235,7 @@ header {
 
 #contatoBtn {
     display: flex;
-    width: 40.75rem;
+    width: 80%;
     height: 3.625rem;
     padding: 0.625rem;
     justify-content: center;
@@ -338,8 +365,7 @@ header {
 }
 
 #icones {
-    width: 15.38975rem;
-    height: 5.2945rem;
+    width: 35%;
 }
 
 #depoimentos {
@@ -380,15 +406,15 @@ header {
 }
 
 .imagemDepoimento {
-    width: 2.6875rem;
-    height: 2.6875rem;
+    width: 6%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-#disponivel-mobile{
+#disponivel-mobile {
     display: none;
 }
+
 #disponivel {
     width: 100%;
     display: flex;
@@ -463,7 +489,6 @@ header {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
-    padding-left: 50px;
     width: 100%;
 }
 
