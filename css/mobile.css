@@ -7,7 +7,6 @@ body {
     padding-top: 4.4375rem;
     height: 100%;
     margin: 0;
-
 }
 
 h1 {
@@ -17,7 +16,6 @@ h1 {
     font-weight: 600;
     line-height: normal;
     letter-spacing: -0.045rem;
-
 }
 
 h2 {
@@ -36,7 +34,6 @@ h3 {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.02438rem;
-
 }
 
 p {
@@ -48,22 +45,99 @@ p {
     letter-spacing: -0.0225rem;
 }
 
+.sidebarActive {
+    width: 100vw;
+    height: 100vh;
+    background: #010202;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#seta {
+    padding: 40px;
+}
+
+nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttonNav {
+    display: flex;
+    width: 21.375rem;
+    height: 3.625rem;
+    padding: 0.625rem 1.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.primary {
+    color: #010202;
+    background: #06CB61;
+}
+
+.secundary {
+    color: #636363;
+    background: #111;
+}
+
+.sidebar {
+    display: none;
+}
+
+#logoAside {
+    width: 50%;
+}
+
+.menu-top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 16px;
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
-    height: 4.4375rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #111;
+    z-index: 2;
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .headerImg {
-    width: 3.4375rem;
-    height: 3.4375rem;
-    padding: 16px;
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 10px 20px;
+}
+
+#menu {
+    width: 3rem;
+    height: 3rem;
+    padding-right: 30px;
 }
 
 #logo {
@@ -75,34 +149,8 @@ header {
 
 #logoImg {
     width: 70%;
-    max-width: 30rem;
-}
-
-#comoJogar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-
-#comoJogar div {
-    width: 80%;
-}
-
-section .titulo {
-    margin-left: -30px;
-}
-
-.card {
-    border-radius: 0.5rem;
-    border: 1px solid #1E1E1E;
-    background: #111;
-    padding: 15px;
-
-}
-
-.dark {
-    background: #090909;
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 #quemSomos {
@@ -113,37 +161,53 @@ section .titulo {
     width: 100%;
 }
 
-#quemRes {
+#quemSomosResponsive {
     width: 80%;
 }
 
-#somos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-
-#camisaRes {
+#camisa {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#camisa {
+#camisaImg {
     width: 80%;
     border-radius: 0.5rem;
 }
 
-.plataforma {
-    width: 7.0625rem;
-    height: 2.0625rem;
+#comoJogar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px 0px;
+    margin-left: 10%;
+    width: 80%;
 }
 
-#icones {
-    width: 15.38975rem;
-    height: 5.2945rem;
+#comoH1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.agruparCard {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 0.5rem;
+    border: 1px solid #1E1E1E;
+    background: #111;
+    padding: 15px;
+}
+
+.dark {
+    background: #090909;
 }
 
 #buttonContato {
@@ -152,7 +216,7 @@ section .titulo {
     justify-content: center;
 }
 
-#contato {
+#contatoBtn {
     border-radius: 0.5rem;
     border: 1px solid #06CB61;
     display: flex;
@@ -169,47 +233,31 @@ section .titulo {
     letter-spacing: -0.0225rem;
 }
 
-#container {
+#modosDeJogo {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 16px 0px;
 }
 
 #containerModo {
     border-radius: 0.5rem;
-    margin-top: 16px;
     border: 1px solid #1F1F1F;
     background: #090909;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    padding: 15px;
 }
 
-#containerModo div.sec {
-    width: 100%;
-}
-
-.modos {
+.modosResponsive {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     max-width: 320px;
-}
-
-.texto {
-    border-radius: 0.5rem;
-    border: 1px solid #1F1F1F;
-    background: #090909;
-    display: flex;
-    width: 9.34731rem;
-    height: 2.308rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
 }
 
 .card-mode {
@@ -225,6 +273,18 @@ section .titulo {
     gap: 0.8rem;
 }
 
+.cardTxt {
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #090909;
+    display: flex;
+    width: 9.34731rem;
+    height: 2.308rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+
 #agora {
     width: 100%;
     flex-direction: column;
@@ -237,7 +297,7 @@ section .titulo {
 #jogarAgora {
     width: 80%;
     display: flex;
-    width: 21.3125rem;
+    max-width: 20rem;
     height: 4.25rem;
     padding: 0.625rem;
     justify-content: center;
@@ -253,15 +313,19 @@ section .titulo {
     letter-spacing: -0.0375rem;
 }
 
+#icones {
+    width: 15.38975rem;
+    height: 5.2945rem;
+}
 
-.membrosContainer {
+.membros {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section .container {
+.membrosContainer {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -270,16 +334,16 @@ section .container {
 
 }
 
-.membrosContainer h3 {
+.membros h3 {
     font-weight: 400;
     color: #636363;
 }
 
-.membrosContainer strong {
+.membros strong {
     color: #06CB61;
 }
 
-#depoimentosRes {
+#depoimentos {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -288,7 +352,7 @@ section .container {
     padding: 16;
 }
 
-#depoimentos {
+#depoimentosResponsive {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -306,7 +370,7 @@ section .container {
     align-items: flex-start;
     gap: 10px;
     padding: 10px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .componente p {
@@ -322,6 +386,10 @@ section .container {
 }
 
 #disponivel {
+    display: none;
+}
+
+#disponivel-mobile {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -338,20 +406,20 @@ section .container {
     padding: 30px;
 }
 
+#textoDisVerde {
+    color: #06CB61;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115.5%;
+    letter-spacing: -0.045rem;
+}
+
 #textoDis {
     color: #FFF;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 115.5%;
-    letter-spacing: -0.045rem;
-}
-
-#textoDisverde {
-    color: #06CB61;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
     line-height: 115.5%;
     letter-spacing: -0.045rem;
 }
@@ -365,7 +433,12 @@ section .container {
 }
 
 #smartphone {
-    width: 60%;
+    width: 50%;
+}
+
+#baixarAgora {
+    width: 100%;
+    background: #111;
 }
 
 #baixe {
@@ -379,11 +452,6 @@ section .container {
     padding: 15px;
 }
 
-#baixarAgora {
-    width: 100%;
-    background: #111;
-}
-
 .plataformas {
     width: 100%;
     text-align: center;
@@ -392,6 +460,11 @@ section .container {
     justify-content: center;
     gap: 10px;
     padding: 16px 0px;
+}
+
+.plataforma {
+    width: 7.0625rem;
+    height: 2.0625rem;
 }
 
 footer {
@@ -407,104 +480,82 @@ footer {
     padding: 30px 0px;
 }
 
-#rodape p {
+footer p {
     margin: 0px;
 }
 
-.buttuonNav {
-    color: #636363;
-    display: flex;
-    width: 21.375rem;
-    height: 3.625rem;
-    padding: 0.625rem 1.75rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    border-radius: 0.5rem;
-    border: 1px solid #1F1F1F;
-    background: #111;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.0375rem;
-    margin-bottom: 15px;
+/* ----------------------------------------------
+ * Generated by Animista on 2023-10-28 2:14:19
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation puff-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
-.buttuonNavV {
-    color: #010202;
-    display: flex;
-    width: 21.375rem;
-    height: 3.625rem;
-    padding: 0.625rem 1.75rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    border-radius: 0.5rem;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.0375rem;
-    margin-bottom: 15px;
-    border-radius: 0.5rem;
-    border: 1px solid #1F1F1F;
-    background: #06CB61;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.0375rem;
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
-.sidebarActive {
-    width: 100vw;
-    height: 100vh;
-    background: #010202;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin-top: 71px
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-.sidebar {
-    width: 100vw;
-    height: 100vh;
-    background: #010202;
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 20px;
-    display: none;
-}
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
 
-#menu100{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 20px;
-}
-
-.buttuonNav:hover {
-    background: #06CB61;
-    color: #010202;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-.headerImg:hover {
-    cursor: pointer;
-}
-
-.plataforma {
-    cursor: pointer;
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

@@ -1,0 +1,543 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #090909;
+    margin: 0;
+
+}
+
+h1 {
+    color: #636363;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 83%;
+    letter-spacing: -0.09rem;
+
+}
+
+h2 {
+    color: #FFF;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02438rem;
+}
+
+h3 {
+    color: #06CB61;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.03563rem;
+}
+
+p {
+    color: #636363;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    gap: 4.6875rem;
+    justify-content: center;
+    width: 100%;
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#seta{
+    display: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+
+#logoAside {
+    display: flex;
+    width: 8.125rem;
+    height: 8.125rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonNav {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8125rem 1.25rem;
+    gap: 0.625rem;
+    border: 0px;
+    animation: both;
+
+}
+
+.secundary {
+    color: #FFF;
+    background-color: transparent;
+
+}
+
+.primary {
+    color: #000;
+    background: #06CB61;
+}
+
+.buttonNav:hover {
+    color: #06CB61;
+    background-color: transparent;
+    border: 2px solid #06CB61;
+
+}
+
+header {
+    display: none;
+}
+
+#logo {
+    display: none;
+}
+
+#quemSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+#quemSomosResponsive {
+    width: 70%;
+}
+
+#camisa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#camisaImg {
+    width: 70%;
+    border-radius: 0.5rem;
+}
+
+#comoJogar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 30px 0px;
+}
+
+#comoJogar div {
+    width: 70%;
+}
+
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agruparCard {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    gap: 0.4375rem;
+    border-radius: 0.5rem;
+    border: 1px solid #1E1E1E;
+    background: #111;
+}
+
+.dark {
+    background: #090909;
+}
+
+.contato3 {
+    padding: 20px 0px;
+}
+
+.contato3 h3 {
+    padding: 0px 40px;
+    gap: 20px;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contato3 p {
+    padding: 0px 40px;
+}
+
+#cardContato h3 {
+    color: #06CB61;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.0675rem;
+}
+
+#buttonContato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contatoBtn {
+    display: flex;
+    width: 40.75rem;
+    height: 3.625rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    border: 1px solid #06CB61;
+    color: #06CB61;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+    background-color: #111;
+}
+
+#modosDeJogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+#containerModo {
+    border-radius: 0.5rem;
+    margin-top: 16px;
+    border: 1px solid #1F1F1F;
+    background: #090909;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.modoJogos {
+    width: 75%;
+}
+
+.modosResponsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 800px;
+}
+
+.card-mode {
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #111;
+    display: flex;
+    width: 21.75rem;
+    height: 9.46269rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8rem;
+}
+
+.cardTxt {
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #090909;
+    display: flex;
+    width: 21.75rem;
+    height: 2.308rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+#agora {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px 0px;
+}
+
+#jogarAgora {
+    width: 70%;
+    display: flex;
+    width: 21.3125rem;
+    height: 4.25rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: #06CB61;
+    color: #111;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.0375rem;
+}
+
+
+.membros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.membrosContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 0px;
+}
+
+.membros h3 {
+    font-weight: 400;
+    color: #636363;
+}
+
+.membros strong {
+    color: #06CB61;
+}
+
+#icones {
+    width: 15.38975rem;
+    height: 5.2945rem;
+}
+
+#depoimentos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+#depoimentosResponsive {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 0px 40px;
+}
+
+.componente {
+    border-radius: 0.5rem;
+    border: 1px solid #1F1F1F;
+    background: #111;
+    display: flex;
+    width: 21.3125rem;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.componente p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagemDepoimento {
+    width: 2.6875rem;
+    height: 2.6875rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#disponivel-mobile{
+    display: none;
+}
+#disponivel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 0px;
+    gap: 60px;
+    background-color: #111;
+}
+
+#textosDisponivel {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#textoDisVerde {
+    color: #06CB61;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115.5%;
+    letter-spacing: -0.075rem;
+}
+
+#textoDis {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.5%;
+    letter-spacing: -0.045rem;
+}
+
+#smartphone100 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#smartphone {
+    width: 30%;
+}
+
+#grupoDisponivel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#baixarAgora {
+    width: 100%;
+    background: #111;
+}
+
+#baixe {
+    color: #06CB61;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115.5%;
+    letter-spacing: -0.045rem;
+}
+
+.menu-top {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 50px;
+    width: 100%;
+}
+
+.plataformas {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+
+.plataforma {
+    width: 11.00919rem;
+    height: 3.21706rem;
+}
+
+footer {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    padding: 20px 0px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.plataforma {
+    cursor: pointer;
+}
+
+/* ----------------------------------------------
+* Generated by Animista on 2023-10-27 21:5:17 * Licensed under FreeBSD License. * See http: //animista.net/license for more info. 
+* w: http: //animista.net, t: @cssanimista
+* ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
