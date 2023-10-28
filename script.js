@@ -12,6 +12,29 @@ function toggleMenu() {
     }
 }
 
+function toggleHome() {
+    let button = document.getElementById("home");
+    let minhaDiv = document.getElementById("header");
+    let sidebar = document.getElementById('sideMenu');
+    let alturaDaDiv = minhaDiv.getBoundingClientRect().top;
+    let deslocamento = alturaDaDiv - 90;
+    let larguraDaTela = window.innerWidth;
+
+    if (larguraDaTela > 1025) {
+        button.addEventListener("click", function () {
+            deslocamento += 100;
+            window.scrollBy({ top: deslocamento, behavior: "smooth" });
+        });
+    } else {
+        sidebar.className = 'sidebar';
+        minhaDiv.style.display = 'flex';
+        button.addEventListener("click", function () {
+            window.scrollBy({ top: deslocamento, behavior: "smooth" });
+        });
+    }
+
+}
+
 function toggleComo() {
     let button = document.getElementById("comoBtn");
     let minhaDiv = document.getElementById("comoJogar");
