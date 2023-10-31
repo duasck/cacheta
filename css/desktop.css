@@ -5,7 +5,7 @@
 body {
     background-color: #090909;
     margin: 0;
-
+    padding-top: 130px;
 }
 
 h1 {
@@ -53,6 +53,10 @@ p {
     width: 100%;
     -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: inherit;
 }
 
 #seta {
@@ -72,6 +76,10 @@ nav {
     height: 8.125rem;
     justify-content: center;
     align-items: center;
+}
+
+#logoAside:hover {
+    cursor: pointer;
 }
 
 .buttonNav {
@@ -176,12 +184,14 @@ header {
     background: #111;
 }
 
-.card h3{
-   margin: 0px;
-}
-.card p{
+.card h3 {
     margin: 0px;
- }
+}
+
+.card p {
+    margin: 0px;
+}
+
 .dark {
     background: #090909;
 }

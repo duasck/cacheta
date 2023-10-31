@@ -1,12 +1,10 @@
 function toggleMenu() {
     var sidebar = document.getElementById('sideMenu');
     var header = document.getElementById('header');
-
-
     if (sidebar.className === 'sidebar') {
         sidebar.className = 'sidebarActive';
         header.className = 'sidebar';
-        document.bodystyle.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
     } else {
         sidebar.className = 'sidebar';
         header.className = '';
@@ -15,97 +13,73 @@ function toggleMenu() {
 }
 
 function toggleHome() {
-    let scrollTopButton = document.getElementById("home");
-    let minhaDiv = document.getElementById("header");
     let sidebar = document.getElementById('sideMenu');
-    let deslocamento = minhaDiv.getBoundingClientRect().top;
     let larguraDaTela = window.innerWidth;
 
     if (larguraDaTela > 1025) {
-
-    } else {
+        document.body.style.overflow = 'auto';
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'
-        });
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollTopButton.style.display = 'block';
-        } else {
-            scrollTopButton.style.display = 'none';
-        }
-        sidebar.className = 'sidebar';
-        minhaDiv.className = '';
-        button.addEventListener("click", function () {
-            window.scrollBy({ top, behavior: "smooth" });
+            behavior: "smooth",
         });
     }
-
-
-
+    else {
+        document.body.style.overflow = 'auto';
+        sidebar.className = 'sidebar';
+        header.className = '';
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
 }
 
 function toggleComo() {
-    let button = document.getElementById("comoBtn");
     let sidebar = document.getElementById('sideMenu');
     let header = document.getElementById('header');
     let larguraDaTela = window.innerWidth;
-
-    button.addEventListener("click", function () {
-
-        if (larguraDaTela > 1025) {
-            let minhaDiv = document.getElementById("comoJogar");
-            minhaDiv.scrollIntoView({ behavior: "smooth" });
-        } else {
-            let minhaDiv = document.getElementById("comoJogar-mobile");
-            let deslocamento = minhaDiv.getBoundingClientRect().top;
-            sidebar.className = 'sidebar';
-            header.className = '';
-            window.scrollBy({ top: deslocamento, behavior: "smooth" });
-        }
-    });
-
-}
-
-function toggleModos() {
-    let button = document.getElementById("modosBtn");
-    let minhaDiv = document.getElementById("modosDeJogo");
-    let sidebar = document.getElementById('sideMenu');
-    let header = document.getElementById('header');
-    let deslocamento = minhaDiv.getBoundingClientRect().top;
-    let larguraDaTela = window.innerWidth;
-
     if (larguraDaTela > 1025) {
-        button.addEventListener("click", function () {
-            window.scrollBy({ top: deslocamento, behavior: "smooth" });
-        });
+        document.body.style.overflow = 'auto';
+        smoothScrollToDiv('comoJogar');
+        console.log('ok');
     } else {
         sidebar.className = 'sidebar';
         header.className = '';
-        button.addEventListener("click", function () {
-            window.scrollBy({ top: deslocamento, behavior: "smooth" });
-        });
+        document.body.style.overflow = 'auto';
+        smoothScrollToDiv('comoJogar-mobile');
+    }
+}
+
+function toggleModos() {
+    let sidebar = document.getElementById('sideMenu');
+    let header = document.getElementById('header');
+    let larguraDaTela = window.innerWidth;
+
+    if (larguraDaTela > 1025) {
+        document.body.style.overflow = 'auto';
+        smoothScrollToDiv('modosDeJogo');
+    } else {
+        document.body.style.overflow = 'auto';
+        sidebar.className = 'sidebar';
+        header.className = '';
+        smoothScrollToDiv('modosDeJogo');
     }
 }
 
 function toggleDownload() {
-    let button = document.getElementById("downloadBtn");
     let sidebar = document.getElementById('sideMenu');
     let header = document.getElementById('header');
     let larguraDaTela = window.innerWidth;
 
-    button.addEventListener("click", function () {
-
-        if (larguraDaTela > 1025) {
-            let minhaDiv = document.getElementById("disponivel");
-            minhaDiv.scrollIntoView({ behavior: "smooth" });
-        } else {
-            let minhaDiv = document.getElementById("disponivel-mobile");
-            let deslocamento = minhaDiv.getBoundingClientRect().top;
-            sidebar.className = 'sidebar';
-            header.className = '';
-            window.scrollBy({ top: deslocamento, behavior: "smooth" });
-        }
-    });
+    if (larguraDaTela > 1025) {
+        document.body.style.overflow = 'auto';
+        smoothScrollToDiv('disponivel');
+    } else {
+        document.body.style.overflow = 'auto';
+        sidebar.className = 'sidebar';
+        header.className = '';
+        smoothScrollToDiv('disponivel-mobile');
+    }
 }
 
 function toggleEntrar() {
@@ -130,4 +104,22 @@ function toggleContato() {
     var urlExterna = 'https://www.google.com';
 
     window.open(urlExterna, '_blank');
+}
+
+const scrollPaddingTop = document.querySelector("header").clientHeight;
+
+function smoothScrollToDiv(id) {
+    smoothScrollToDiv(id, scrollPaddingTop);
+}
+
+function smoothScrollToDiv(id) {
+    const scrollTop = document.documentElement.scrollTop;
+    const div = document.getElementById(id);
+    const divTop = div.offsetTop;
+    const distance = divTop - scrollTop - scrollPaddingTop;
+    
+    window.scrollTo({
+        top: scrollTop + distance,
+        behavior: "smooth",
+    });
 }

@@ -8,6 +8,7 @@ body {
     height: 100%;
     margin: 0;
     max-width: 100%;
+    
 }
 
 h1 {
@@ -378,7 +379,7 @@ header {
     padding: 32px 0px 16px 0px;
 }
 
-#depoimentos h1{
+#depoimentos h1 {
     margin: 0px;
 }
 
@@ -633,5 +634,3 @@ footer p {
         opacity: 1;
     }
 }
-
-
