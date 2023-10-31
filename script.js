@@ -41,7 +41,6 @@ function toggleComo() {
     if (larguraDaTela > 1025) {
         document.body.style.overflow = 'auto';
         smoothScrollToDiv('comoJogar');
-        console.log('ok');
     } else {
         sidebar.className = 'sidebar';
         header.className = '';
@@ -89,13 +88,13 @@ function toggleEntrar() {
 }
 
 function togglePlayStore() {
-    var urlExterna = 'https://www.google.com';
+    var urlExterna = 'https://play.google.com/store/apps/details?id=com.kk.cacheta&hl=pt_BR&gl=US';
 
     window.open(urlExterna, '_blank');
 }
 
 function toggleAppleStore() {
-    var urlExterna = 'https://www.google.com';
+    var urlExterna = 'https://apps.apple.com/br/app/cacheta-league/id1582103209://www.google.com';
 
     window.open(urlExterna, '_blank');
 }
