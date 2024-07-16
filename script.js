@@ -88,13 +88,13 @@ function toggleEntrar() {
 }
 
 function togglePlayStore() {
-    var urlExterna = 'https://play.google.com/store/apps/details?id=com.kk.cacheta&hl=pt_BR&gl=US';
+    var urlExterna = 'https://google.com/';
 
     window.open(urlExterna, '_blank');
 }
 
 function toggleAppleStore() {
-    var urlExterna = 'https://apps.apple.com/br/app/cacheta-league/id1582103209://www.google.com';
+    var urlExterna = 'https://google.com/';
 
     window.open(urlExterna, '_blank');
 }
